@@ -4,9 +4,9 @@ Projeto teste App da tabela Fipe.
 Base no projeto real da tabela fipe desde do FrontEnd até o Backend.
 Componentes do Maui e com as melhores práticas do C-Sharp.
 Nele esta englobado:
-1.	Aprenda a consumir Apis.
-2.	Aprenda HttpClient para Api.
-3.	Aprenda sobre componente do Maui.
+1.	Consumindo Apis.
+2.	HttpClient para Api.
+3.	Componentes do Maui.
 4.	Selector Picker.
 5.	Button.
 6.	Caixa de Edição.
@@ -14,7 +14,7 @@ Nele esta englobado:
 8.	Label do Maui.
 9.	Eventos do Maui.
 10.	Como criar um projeto bem elaborado.
-11.	Orientação a Objetos no Mau.
+11.	Orientação a Objetos no Maui.
 
 <p align="center">
 <img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge"/>
