@@ -5,28 +5,33 @@
 
     <ScrollView>
         <VerticalStackLayout
-            Spacing="25"
-            Padding="30,0"
+            Spacing="15"
+            Padding="10,0"
             VerticalOptions="Center">
 
-            <Image
-                Source="dotnet_bot.png"
-                SemanticProperties.Description="Cute dot net bot waving hi to you!"
-                HeightRequest="200"
-                HorizontalOptions="Center" />
-
+            
             <Label
-                Text="Olá Mundo!"
+                Text="Calculadora !"
                 SemanticProperties.HeadingLevel="Level1"
-                FontSize="32"
+                FontSize="30"
                 HorizontalOptions="Center" />
 
             <Label
-                Text="App para tabela Fipe"
+                Text="Digite o primeiro número "
                 SemanticProperties.HeadingLevel="Level2"
                 SemanticProperties.Description="Welcome to dot net Multi platform App U I"
-                FontSize="18"
+                FontSize="15"
                 HorizontalOptions="Center" />
+            
+            <Label
+                Text="Digite o segundo número "
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
+                FontSize="15"
+                HorizontalOptions="Center" />
+
+            <Entry x:Name="Numero1"
+                   Placeholder="Entre com o numero" /> 
 
             <Button
                 x:Name="CounterBtn"
