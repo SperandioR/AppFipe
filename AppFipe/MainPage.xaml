@@ -13,6 +13,7 @@
             <Label
                 Text="Calculadora !"
                 SemanticProperties.HeadingLevel="Level1"
+                TextColor="SaddleBrown"
                 FontSize="30"
                 HorizontalOptions="Center" />
 
@@ -23,21 +24,38 @@
                 FontSize="15"
                 HorizontalOptions="Center" />
             
+            <Entry x:Name="Numero1"
+                   BackgroundColor="DarkGoldenrod"
+                   PlaceholderColor="Black"
+                   Placeholder="Entre com o numero" />
+
             <Label
                 Text="Digite o segundo número "
-                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.HeadingLevel="Level3"
                 SemanticProperties.Description="Welcome to dot net Multi platform App U I"
                 FontSize="15"
                 HorizontalOptions="Center" />
 
-            <Entry x:Name="Numero1"
+            <Entry x:Name="Numero2"
+                   BackgroundColor="DarkGoldenrod"
+                   PlaceholderColor="Black"
                    Placeholder="Entre com o numero" /> 
 
             <Button
                 x:Name="CounterBtn"
-                Text="Play"
+                Text="Calcular"
                 SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked"
+                Clicked="OnCalcular"
+                HorizontalOptions="Center" />
+
+            <Label
+                x:Name="resultado"
+                Text=""
+                BackgroundColor="DarkKhaki"
+                TextColor="OrangeRed"
+                SemanticProperties.HeadingLevel="Level8"
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
+                FontSize="50"
                 HorizontalOptions="Center" />
 
         </VerticalStackLayout>
