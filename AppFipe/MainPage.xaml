@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-    
-    <!-- Pág interna do aplicativo, layout padrão -->
+
+<!-- Pág interna do aplicativo, layout padrão -->
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppFipe.MainPage">
-    
+
     <!--(ScrollView) barra de rolagem caso o software ocupar toda a pág -->
     <ScrollView>
         <!--Muda o layout da pág horizontal ou vertical-->
@@ -15,49 +15,49 @@
 
             <Label
                 Text="Tabela Fipe Canal"
-                FontSize="Title"
+                FontSize="32"
                 HorizontalOptions="Center"
-                              
-                               
+                TextColor="DarkOliveGreen"
+                FontAttributes="Bold"
+                SemanticProperties.HeadingLevel="Level1"
+                />
+
+            <Label
+                Text="Aplicativo Maui"
+                FontSize="21"
+                HorizontalOptions="Center"
+                TextColor="Red"
+                SemanticProperties.HeadingLevel="Level2"
                 />
 
 
             <Label
-                Text="Calculadora !"
-                SemanticProperties.HeadingLevel="Level1"
-                TextColor="SaddleBrown"
-                FontSize="30"
-                HorizontalOptions="Center" />
-
-            <Label
-                Text="Digite o primeiro número "
-                SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
-                FontSize="15"
-                HorizontalOptions="Center" />
-            
-            <Entry x:Name="Numero1"
-                   BackgroundColor="DarkGoldenrod"
-                   PlaceholderColor="Black"
-                   Placeholder="Entre com o numero" />
-
-            <Label
-                Text="Digite o segundo número "
+                Text="Tipo de Veículo !"
                 SemanticProperties.HeadingLevel="Level3"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
-                FontSize="15"
+                TextColor="MediumVioletRed"
+                FontSize="18"
                 HorizontalOptions="Center" />
 
-            <Entry x:Name="Numero2"
-                   BackgroundColor="DarkGoldenrod"
-                   PlaceholderColor="Black"
-                   Placeholder="Entre com o numero" /> 
-
+            <Picker x:Name="picker"
+        Title="Select a monkey">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Baboon</x:String>
+                        <x:String>Capuchin Monkey</x:String>
+                        <x:String>Blue Monkey</x:String>
+                        <x:String>Squirrel Monkey</x:String>
+                        <x:String>Golden Lion Tamarin</x:String>
+                        <x:String>Howler Monkey</x:String>
+                        <x:String>Japanese Macaque</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+            
             <Button
                 x:Name="CounterBtn"
                 Text="Calcular"
                 SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCalcular"
+                Clicked="OnCounterClicked"
                 HorizontalOptions="Center" />
 
             <Label

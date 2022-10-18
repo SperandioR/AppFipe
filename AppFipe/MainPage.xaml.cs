@@ -24,13 +24,5 @@ public partial class MainPage : ContentPage
 		SemanticScreenReader.Announce(CounterBtn.Text);
 	}
 
-	private void OnCalcular(object sender,EventArgs e)
-	{
-		int num1= Convert.ToInt32(Numero1.Text);
-        int num2 = Convert.ToInt32(Numero2.Text);
-
-		int soma = num1 + num2;
-		resultado.Text = soma.ToString();
-    }
 }
 
