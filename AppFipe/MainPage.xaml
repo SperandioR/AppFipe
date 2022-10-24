@@ -29,41 +29,93 @@
                 TextColor="Red"
                 SemanticProperties.HeadingLevel="Level2"
                 />
-
-
+            
             <Label
-                Text="Tipo de Veículo !"
+                Text="Tipo de Veículo"
                 SemanticProperties.HeadingLevel="Level3"
                 TextColor="MediumVioletRed"
                 FontSize="18"
                 HorizontalOptions="Center" />
 
-            <Picker x:Name="picker"
-        Title="Selecione o tipo de veículo">
-                <Picker.ItemsSource>
-                    <x:Array Type="{x:Type x:String}">
-                        <x:String>Carro</x:String>
-                        <x:String>Moto</x:String>
-                        <x:String>Caminhões</x:String>
-                    </x:Array>
-                </Picker.ItemsSource>
+            <Picker x:Name="pickerTipo"
+                 Title="Selecione o tipo de veículo"
+                 HorizontalOptions="Center"
+                 FontSize="20"
+                 BackgroundColor="AliceBlue"
+                 SelectedIndexChanged=""                   
+             >
+
+            </Picker>
+
+            <Label
+                Text="Fabricante"
+                SemanticProperties.HeadingLevel="Level4"
+                TextColor="MediumVioletRed"
+                FontSize="18"
+                HorizontalOptions="Center" />
+                        
+            <Picker x:Name="pickerFabricante"
+                 Title="Selecione os Fabricantes"
+                 HorizontalOptions="Center"
+                 FontSize="20"
+                 BackgroundColor="AliceBlue"
+                 SelectedIndexChanged=""                   
+             >
+
+            </Picker>
+
+            <Label
+                Text="Modelo"
+                SemanticProperties.HeadingLevel="Level5"
+                TextColor="MediumVioletRed"
+                FontSize="18"
+                HorizontalOptions="Center" />
+
+            <Picker x:Name="pickerModelo"
+                 Title="Selecione o Modelo"
+                 HorizontalOptions="Center"
+                 FontSize="20"
+                 BackgroundColor="AliceBlue"
+                 SelectedIndexChanged=""                   
+             >
+
             </Picker>
             
+            <Label
+                Text="Ano"
+                SemanticProperties.HeadingLevel="Level6"
+                TextColor="MediumVioletRed"
+                FontSize="18"
+                HorizontalOptions="Center" />
+
+            <Picker x:Name="pickerAnoCarro"
+                 Title="Selecione o Ano"
+                 HorizontalOptions="Center"
+                 FontSize="20"
+                 BackgroundColor="AliceBlue"
+                 SelectedIndexChanged=""                   
+             >
+
+            </Picker>                  
+                                                        
             <Button
-                x:Name="CounterBtn"
-                Text="Calcular"
-                SemanticProperties.Hint="Counts the number of times you click"
+                x:Name="btnpesquisa"
+                Text="Pesquisar Preço R$"
+                SemanticProperties.Hint="Pesquisar o preço"
                 Clicked="OnCounterClicked"
+                FontSize="18"
+                FontAttributes="Bold"
+                BackgroundColor="DarkGreen"
                 HorizontalOptions="Center" />
 
             <Label
-                x:Name="resultado"
+                x:Name="Lpreço"
                 Text=""
-                BackgroundColor="DarkKhaki"
-                TextColor="OrangeRed"
+                TextColor="Black"
+                FontAttributes="Bold"
                 SemanticProperties.HeadingLevel="Level8"
                 SemanticProperties.Description="Welcome to dot net Multi platform App U I"
-                FontSize="50"
+                FontSize="18"
                 HorizontalOptions="Center" />
 
         </VerticalStackLayout>
