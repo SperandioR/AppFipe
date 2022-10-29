@@ -42,7 +42,7 @@
                  HorizontalOptions="Center"
                  FontSize="20"
                  BackgroundColor="AliceBlue"
-                 SelectedIndexChanged=""                   
+                                   
              >
 
             </Picker>
@@ -59,7 +59,7 @@
                  HorizontalOptions="Center"
                  FontSize="20"
                  BackgroundColor="AliceBlue"
-                 SelectedIndexChanged=""                   
+                                    
              >
 
             </Picker>
@@ -76,7 +76,7 @@
                  HorizontalOptions="Center"
                  FontSize="20"
                  BackgroundColor="AliceBlue"
-                 SelectedIndexChanged=""                   
+                                  
              >
 
             </Picker>
@@ -93,7 +93,7 @@
                  HorizontalOptions="Center"
                  FontSize="20"
                  BackgroundColor="AliceBlue"
-                 SelectedIndexChanged=""                   
+                                    
              >
 
             </Picker>                  
@@ -102,7 +102,6 @@
                 x:Name="btnpesquisa"
                 Text="Pesquisar Preço R$"
                 SemanticProperties.Hint="Pesquisar o preço"
-                Clicked="OnCounterClicked"
                 FontSize="18"
                 FontAttributes="Bold"
                 BackgroundColor="DarkGreen"
