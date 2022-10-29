@@ -1,6 +1,6 @@
 ﻿using System; //Biblioteca C#.
 using System.Collections.Generic;
-using System.Linq;
+using System.Linq; //métodos de extensão para seu objeto. Usando linq suas coleções (Array, ArrayList, SortedList e etc..)
 using System.Text;
 using System.Threading.Tasks;
 
