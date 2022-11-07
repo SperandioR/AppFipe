@@ -16,7 +16,7 @@ namespace AppFipe.Util
            var client = new HttpClient();               
             try
             {
-                HttpRequestMessage response = await client.GetAsync(endereco).ConfigureAwait(false);
+                HttpResponseMessage response = await client.GetAsync(endereco).ConfigureAwait(false);
                 response.EnsureSuccessStatusCode();
                 string responseBody = await response.Content.ReadAsStringAsync();
 
