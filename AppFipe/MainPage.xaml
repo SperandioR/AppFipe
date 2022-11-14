@@ -38,7 +38,7 @@
                 HorizontalOptions="Center" />
 
             <Picker x:Name="pickerTipo"
-                 Title="Selecione o tipo de veículo"
+                 Title="Selecione um tipo de veículo"
                  HorizontalOptions="Center"
                  FontSize="20"
                  BackgroundColor="AliceBlue"
@@ -93,7 +93,7 @@
                  HorizontalOptions="Center"
                  FontSize="20"
                  BackgroundColor="AliceBlue"
-                                    
+                                  
              >
 
             </Picker>                  

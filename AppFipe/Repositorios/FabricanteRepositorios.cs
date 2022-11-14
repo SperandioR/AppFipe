@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AppFipe.Repositorios
 {
-    public class FabricanteRepositorio
+    public class FabricanteRepositorios
     {
     
     
