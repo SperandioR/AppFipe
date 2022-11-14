@@ -1,4 +1,4 @@
-﻿using AppFipe.Repositorios;
+﻿using AppFipe.Repositorios; //Chamada automática da pasta repositórios.
 using Microsoft.Maui.Platform;
 using System;
 
