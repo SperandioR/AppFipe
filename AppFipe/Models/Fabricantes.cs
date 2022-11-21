@@ -8,7 +8,8 @@ namespace AppFipe.Models
 {
     public class Fabricantes
     {
-    
-    
+        public String codigo { get; set; }
+        public String nome { get; set; }
+
     }
 }
