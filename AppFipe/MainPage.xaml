@@ -11,6 +11,7 @@
         <VerticalStackLayout 
             Spacing="15"
             Padding="10,0"
+            BackgroundColor="Black"
             VerticalOptions="Center">
 
             <Label
@@ -105,7 +106,7 @@
                 SemanticProperties.Hint="Pesquisar o preço"
                 FontSize="18"
                 FontAttributes="Bold"
-                BackgroundColor="DarkGreen"
+                BackgroundColor="DarkOrange"
                 HorizontalOptions="Center" />
 
             <Label
