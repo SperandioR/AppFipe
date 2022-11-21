@@ -15,7 +15,7 @@ namespace AppFipe.Repositorios
             {
                 new Veiculos() { Id = 1, Tipo = "carros" } ,
                 new Veiculos() { Id = 2, Tipo = "motos" } ,
-                new Veiculos() { Id = 3, Tipo = "caminhôes" } ,
+                new Veiculos() { Id = 3, Tipo = "caminhoes" } ,
             
             };
             return lveiculos;
