@@ -11,4 +11,11 @@ namespace AppFipe.Models
         public int MyProperty { get; set; }
 
     }
+
+    public class modelos
+    {
+        public string nome { get; set; }
+        public string codigo { get; set;}
+
+    }
 }
