@@ -78,6 +78,7 @@
                  HorizontalOptions="Center"
                  FontSize="20"
                  BackgroundColor="AliceBlue"
+                 SelectedIndexChanged="SelFabricantes"
                                   
              >
 

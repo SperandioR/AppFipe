@@ -8,7 +8,7 @@ namespace AppFipe.Models
 {
     public class modeloFabricante
     {
-        public int MyProperty { get; set; }
+        public List<modelos> modelos { get; set; }
 
     }
 

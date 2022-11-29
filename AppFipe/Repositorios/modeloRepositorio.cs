@@ -1,12 +1,27 @@
-﻿using System;
+﻿using AppFipe.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 
 namespace AppFipe.Repositorios
 {
-    internal class modeloRepositorio
+    public class modeloRepositorio
     {
+        public static List<modelos> ListarModelos(string codigo, string TipoVeiculo)
+        {
+            var url = $@"https://parallelum.com.br/fipe/api/v1/{TipoVeiculo}/marcas/{codigo}/ modelos";
+
+            var resposta = Util.HttpClientUtil.ConsHttpClientAsync(url).Result;
+
+            List<modelos> modelos = JsonSerializer.Deserialize<List<modelos>>(resposta);
+
+
+            return modelos;
+
+        }
+
     }
 }
