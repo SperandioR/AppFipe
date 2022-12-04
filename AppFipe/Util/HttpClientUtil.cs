@@ -9,7 +9,7 @@ namespace AppFipe.Util
     public class HttpClientUtil // Alterando a classe interno para public.
     {
         //Criando Métodos com nome Http... e adicionando endereço.
-        public static async Task<String> ConsHttpClientAsync(String endereco)
+        public static async Task<string> ConsHttpClientAsync(string endereco)
         {
             
            //criando uma requisição Http para buscar uma requsição da Url.

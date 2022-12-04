@@ -1,6 +1,5 @@
 ﻿using AppFipe.Models;
 using AppFipe.Repositorios; //Chamada automática da pasta repositórios.
-using Javax.Security.Auth;
 using Microsoft.Maui.Platform;
 using System;
 using System.Security.Cryptography.X509Certificates;
@@ -55,10 +54,10 @@ public partial class MainPage : ContentPage
 
     void SelFabricantes(object sender, EventArgs e) //evento para carregar o arquivo: MainPage.xamI
     {
-        var pickerFabricantes = (Picker)sender; //Atributo:pickerTipo.
+        var pickerFabricante = (Picker)sender; //Atributo:pickerTipo.
         int selectedIndex = pickerFabricante.SelectedIndex; //propiedades:SelectedIndex.
 
-        if (selectedIndex != -1)
+        if (selectedIndex != -1) 
         {
             Fabricantes fabri = (Fabricantes)pickerFabricante.ItemsSource[selectedIndex];
             CodModelo = fabri.codigo;

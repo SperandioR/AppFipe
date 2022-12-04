@@ -12,14 +12,14 @@ namespace AppFipe.Repositorios
     {
         public static List<modelos> ListarModelos(string codigo, string TipoVeiculo)
         {
-            var url = $@"https://parallelum.com.br/fipe/api/v1/{TipoVeiculo}/marcas/{codigo}/ modelos";
+            var url = $@"https://parallelum.com.br/fipe/api/v1/{TipoVeiculo}/marcas/{codigo}/modelos";
 
             var resposta = Util.HttpClientUtil.ConsHttpClientAsync(url).Result;
 
-            List<modelos> modelos = JsonSerializer.Deserialize<List<modelos>>(resposta);
+            var Modelos = Newtonsoft.Json.JsonConvert.DeserializeObject<modeloFabricante>(resposta);   
 
 
-            return modelos;
+            return Modelos.modelos;
 
         }
 

@@ -50,7 +50,7 @@
             </Picker>
 
             <Label
-                Text="Fabricante"
+                Text="Fabricantes"
                 SemanticProperties.HeadingLevel="Level4"
                 TextColor="MediumVioletRed"
                 FontSize="18"
@@ -61,6 +61,7 @@
                  HorizontalOptions="Center"
                  FontSize="20"
                  BackgroundColor="AliceBlue"
+                 SelectedIndexChanged="SelFabricantes"
                                     
              >
 
@@ -79,6 +80,7 @@
                  FontSize="20"
                  BackgroundColor="AliceBlue"
                  SelectedIndexChanged="SelFabricantes"
+                 
                                   
              >
 
