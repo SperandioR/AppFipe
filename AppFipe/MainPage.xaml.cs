@@ -60,8 +60,8 @@ public partial class MainPage : ContentPage
 
         if (selectedIndex != -1)
         {
-            Fabricantes fabri = (Fabricantes)pickerFabricante.ItemsSource[selectedIndex];
-            CodModelo = fabri.codigo;
+            Fabricantes fabricante = (Fabricantes)pickerFabricante.ItemsSource[selectedIndex];
+            CodModelo = fabricante.codigo;
 
             CarregarModelos(CodModelo);
         }
