@@ -12,6 +12,7 @@ public partial class MainPage : ContentPage
 
     private static string sTipoVeiculo;
     private static string CodModelo;
+    private static string AnoCarro;
 
     public MainPage()
     {
@@ -57,7 +58,7 @@ public partial class MainPage : ContentPage
         var pickerFabricante = (Picker)sender; //Atributo:pickerTipo.
         int selectedIndex = pickerFabricante.SelectedIndex; //propiedades:SelectedIndex.
 
-        if (selectedIndex != -1) 
+        if (selectedIndex != -1)
         {
             Fabricantes fabri = (Fabricantes)pickerFabricante.ItemsSource[selectedIndex];
             CodModelo = fabri.codigo;
@@ -65,7 +66,7 @@ public partial class MainPage : ContentPage
             CarregarModelos(CodModelo);
         }
     }
-    
+
     private void CarregarModelos(string codigo)
     {
         pickerModelo.Title = "Selecione um modelo de carro";
@@ -74,6 +75,28 @@ public partial class MainPage : ContentPage
 
     }
 
+    void SelModelos(object sender, EventArgs e)
+    {
+        var pickerAnoCarro = (Picker)sender; //Atributo:pickerAnocarro.
+        int selectedIndex = pickerAnoCarro.SelectedIndex; //propiedades:SelectedIndex.
+
+        if (selectedIndex != -1)
+        {
+            Modelos Ano = (Modelos)pickerAnoCarro.ItemsSource[selectedIndex];
+            AnoCarro = Ano.codigo;
+
+            CarregarAnos(AnoCarro);
+        }
+
+    }
+
+    private void CarregarAnos(string CodAno)
+    {
+        pickerAnoCarro.Title = "Selecione o Ano do veículo";
+        pickerAnoCarro.ItemsSource = AnoRepositorio.ListarAnoCarro(CodAno, sTipoVeiculo, CodModelo);
+        pickerAnoCarro.ItemDisplayBinding = new Binding("nome");
+
+    }
 }
 
 
